@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pin interest layout</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            margin: 0;
+            padding: 0;
+            width: 80vw;
+            position: absolute;
+            background-color: rgb(3, 2, 2);
+            left: 50%;
+            transform: translateX(-50%);
+            display: grid;
+            grid-template-columns: repeat(auto-fill,250px);
+            grid-auto-rows:10px ;
+            justify-content: center;
+        }
+        .card{
+            padding: 0;
+            margin: 15px 10px;
+            border-radius: 16px;
+            background-color: rgb(22, 216, 96);
+        }
+        .card_small{
+            grid-row-end:span 26;
+        }
+        .card_medium{
+            grid-row-end:span 33;
+        }
+        .card_large{
+            grid-row-end:span 45;
+        }
+    </style>
+</head>
+<body> 
+    <div class="container">
+        <div class="card card_small"></div>
+        <div class="card card_large"></div>
+        <div class="card card_medium"></div>
+        <div class="card card_large"></div>
+        <div class="card card_medium"></div>
+        <div class="card card_large"></div>
+        <div class="card card_medium"></div>
+        <div class="card card_small"></div>
+        <div class="card card_large"></div>
+        <div class="card card_medium"></div>
+        <div class="card card_small"></div>
+
+    </div>
+ 
+    
+</body>
+</html>
